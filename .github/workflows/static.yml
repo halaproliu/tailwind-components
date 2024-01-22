@@ -31,10 +31,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: "16"
+      - name: Setup Dependencies
       - run: npm install --registry=https://registry.npmmirror.com
+      - name: Build
       - run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
