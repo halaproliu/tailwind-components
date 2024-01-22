@@ -4,7 +4,7 @@ import context from "./context";
 function LayoutItem(props) {
   const { compName } = useContext(context);
   const { name, img = "", url = "#", count } = props;
-  const imgPrefix = "/img/category-thumbnails";
+  const imgPrefix = import.meta.env.VITE_BASE_URL + "/img/category-thumbnails";
   const imgUrl = `${imgPrefix}${compName ? `/${compName}` : ""}${img}`;
   return (
     <li>
