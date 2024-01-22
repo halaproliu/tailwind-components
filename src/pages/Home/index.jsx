@@ -253,7 +253,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/heroes.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/heroes.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -273,7 +273,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/feature-sections.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/feature-sections.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -293,7 +293,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/cta-sections.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/cta-sections.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -313,7 +313,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/pricing.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/pricing.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -333,7 +333,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/header.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/header.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -353,7 +353,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/newsletter-sections.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/newsletter-sections.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -373,7 +373,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/stats-sections.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/stats-sections.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -393,7 +393,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/testimonials.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/testimonials.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -413,7 +413,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/blog-sections.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/blog-sections.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -433,7 +433,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/contact-sections.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/contact-sections.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -453,7 +453,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/team-sections.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/team-sections.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -473,7 +473,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/content-sections.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/content-sections.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -493,7 +493,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/logo-clouds.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/logo-clouds.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -513,7 +513,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/faq-sections.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/faq-sections.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -552,7 +552,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/footers.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/footers.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -601,7 +601,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/headers.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/headers.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -621,7 +621,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/flyout-menus.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/flyout-menus.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -641,7 +641,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/banners.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/banners.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -671,7 +671,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/404-pages.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/404-pages.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -701,7 +701,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/landing-pages.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/landing-pages.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -740,7 +740,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/pricing-pages.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/pricing-pages.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -779,7 +779,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/marketing/about-pages.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/marketing/about-pages.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -837,7 +837,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/product-overviews.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/product-overviews.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -857,7 +857,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/product-lists.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/product-lists.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -877,7 +877,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/category-previews.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/category-previews.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -897,7 +897,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/shopping-carts.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/shopping-carts.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -917,7 +917,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/category-filters.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/category-filters.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -937,7 +937,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/product-quickviews.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/product-quickviews.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -957,7 +957,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/product-features.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/product-features.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -977,7 +977,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/store-navigation.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/store-navigation.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -997,7 +997,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/promo-sections.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/promo-sections.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1017,7 +1017,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/checkout-forms.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/checkout-forms.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1056,7 +1056,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/reviews.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/reviews.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1095,7 +1095,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/order-summaries.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/order-summaries.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1134,7 +1134,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/order-history.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/order-history.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1173,7 +1173,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/incentives.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/incentives.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1222,7 +1222,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/storefront-pages.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/storefront-pages.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1261,7 +1261,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/product-pages.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/product-pages.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1300,7 +1300,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/category-pages.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/category-pages.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1339,7 +1339,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/shopping-cart-pages.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/shopping-cart-pages.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1378,7 +1378,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/checkout-pages.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/checkout-pages.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1417,7 +1417,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/order-detail-pages.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/order-detail-pages.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
@@ -1456,7 +1456,7 @@ function Home() {
                   <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                     <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                       <img
-                        src="/img/category-thumbnails/ecommerce/order-history-pages.png"
+                        src={`${import.meta.env.VITE_BASE_URL}/img/category-thumbnails/ecommerce/order-history-pages.png`}
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
