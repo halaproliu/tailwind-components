@@ -6,6 +6,7 @@ function LayoutItem(props) {
   const { name, img = "", url = "#", count } = props;
   const imgPrefix = import.meta.env.VITE_BASE_URL + "/img/category-thumbnails";
   const imgUrl = `${imgPrefix}${compName ? `/${compName}` : ""}${img}`;
+  const fullUrl = import.meta.env.VITE_BASE_URL + url;
   return (
     <li>
       <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
@@ -13,7 +14,7 @@ function LayoutItem(props) {
           <img src={imgUrl} alt="" className="absolute inset-0 h-full w-full" />
         </div>
         <h4 className="mt-4 text-sm font-medium text-slate-900 group-hover:text-indigo-600">
-          <a href={url}>
+          <a href={fullUrl}>
             <span className="absolute -inset-2.5 z-10"></span>
             <span className="relative">{name}</span>
           </a>
