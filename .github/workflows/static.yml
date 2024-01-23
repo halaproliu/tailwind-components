@@ -26,7 +26,7 @@ jobs:
   deploy:
     strategy:
       matrix:
-        node-version: ['18.x']
+        node-version: ["18.x"]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -41,6 +41,7 @@ jobs:
       - run: npm install -g pnpm
       - run: pnpm install --registry=https://registry.npmmirror.com
       - run: pnpm run build
+      - run: cp dist/index.html dist/404.html
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
