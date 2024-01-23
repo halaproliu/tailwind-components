@@ -21,13 +21,12 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-strategy:
-  matrix:
-    node-version: ['14.x', '16.x', '18.x']
-
 jobs:
   # Single deploy job since we're just deploying
   deploy:
+    strategy:
+      matrix:
+        node-version: ['14.x', '16.x', '18.x']
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
