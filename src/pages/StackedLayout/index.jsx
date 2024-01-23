@@ -13,13 +13,13 @@ import htmlDarkNavData from "./snippets/darknav/index.html?raw";
 import reactDarkNavData from "./snippets/darknav/index.jsx?raw";
 import vueDarkNavData from "./snippets/darknav/index.vue?raw";
 
-import htmlBrandednavData from "./snippets/Brandednav/index.html?raw";
-import reactBrandednavData from "./snippets/Brandednav/index.jsx?raw";
-import vueBrandednavData from "./snippets/Brandednav/index.vue?raw";
+import htmlBrandednavData from "./snippets/brandednav/index.html?raw";
+import reactBrandednavData from "./snippets/brandednav/index.jsx?raw";
+import vueBrandednavData from "./snippets/brandednav/index.vue?raw";
 
-import htmlDarknavwithoverlapData from "./snippets/Darknavwithoverlap/index.html?raw";
-import reactDarknavwithoverlapData from "./snippets/Darknavwithoverlap/index.jsx?raw";
-import vueDarknavwithoverlapData from "./snippets/Darknavwithoverlap/index.vue?raw";
+import htmlDarknavwithoverlapData from "./snippets/darknavwithoverlap/index.html?raw";
+import reactDarknavwithoverlapData from "./snippets/darknavwithoverlap/index.jsx?raw";
+import vueDarknavwithoverlapData from "./snippets/darknavwithoverlap/index.vue?raw";
 
 function StackedLayout() {
   return (
