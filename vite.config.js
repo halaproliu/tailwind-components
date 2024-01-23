@@ -5,8 +5,9 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
+  console.log('env: ', env.NODE_ENV);
   return {
-    base: env.VITE_NODE_ENV === "production" ? "/tailwind-components" : "/",
+    base: env.NODE_ENV === "production" ? "/tailwind-components" : "/",
     plugins: [react()],
     build: {
       outDir: 'dist',
