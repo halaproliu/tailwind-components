@@ -9,7 +9,29 @@ export default defineConfig(({ mode }) => {
     base: env.VITE_NODE_ENV === "production" ? "/tailwind-components" : "/",
     plugins: [react()],
     build: {
-      outDir: "docs",
+      outDir: 'dist',
+      assetsDir: 'assets',
+      assetsInlineLimit: 8 * 1024,
+      chunkSizeWarningLimit: 1000,
+      rollupOptions: {
+        output: {
+          // 静态资源分类打包
+          chunkFileNames: (chunkInfo) => {
+            // 文件名方便debug
+            const facadeModuleId = chunkInfo.facadeModuleId
+              ? chunkInfo.facadeModuleId.split('/')
+              : [];
+            const fileName =
+              facadeModuleId[facadeModuleId.length - 2] || '[name]';
+            return `assets/js/${fileName}-[name]-[hash].js`;
+          },
+          entryFileNames: 'assets/js/[name]-[hash].js',
+          assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
+          manualChunks: {
+            react: ['react', 'react-dom', 'react-router-dom']
+          }
+        }
+      }
     },
     resolve: {
       alias: {

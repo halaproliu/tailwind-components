@@ -38,15 +38,16 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install --registry=https://registry.npmmirror.com
-      - run: npm run build
+      - run: npm install -g pnpm
+      - run: pnpm install --registry=https://registry.npmmirror.com
+      - run: pnpm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: "docs"
+          path: "dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
