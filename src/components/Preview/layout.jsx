@@ -2,13 +2,31 @@ import { getRandomId } from "@/utils/random";
 import React, { cloneElement } from "react";
 
 function PreviewLayout(props) {
-  const { moduleName, subModuleName, modules, title, children, iframeHeight } = props;
+  const {
+    moduleName,
+    subModuleName,
+    modules,
+    title,
+    children,
+    iframeHeight,
+    placeholder,
+    replaceMarkedList,
+  } = props;
   const id = getRandomId(20);
   const frameId = `frame-${id}`;
   const componentId = `component-${id}`;
 
   const child = React.Children.map(children, (c) => {
-    return cloneElement(c, { componentId, frameId, iframeHeight, modules });
+    const childProps = c.props;
+    return cloneElement(c, {
+      componentId,
+      frameId,
+      iframeHeight,
+      modules,
+      placeholder,
+      replaceMarkedList,
+      ...childProps,
+    });
   });
 
   return (
@@ -27,19 +45,13 @@ function PreviewLayout(props) {
             aria-label="Breadcrumbs"
             className="order-first flex space-x-2 text-sm font-semibold"
           >
-            <a
-              className="text-slate-500 hover:text-slate-600"
-              href="/"
-            >
+            <a className="text-slate-500 hover:text-slate-600" href="/">
               {moduleName}
             </a>
             <div aria-hidden="true" className="select-none text-slate-400">
               /
             </div>
-            <a
-              className="text-slate-500 hover:text-slate-600"
-              href="/"
-            >
+            <a className="text-slate-500 hover:text-slate-600" href="/">
               {subModuleName}
             </a>
           </nav>

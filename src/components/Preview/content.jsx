@@ -6,6 +6,18 @@ const tabId = getId();
 const nextTabId = getId();
 const randomId = getRandomId();
 
+/**
+ * @description: 预览内容
+ * @param {*} props
+ * @param {string} previewSrc 预览html字符串
+ * @param {string} anchorText 替换预览html的标识符
+ * @param {string} iframeHeight iframe高度
+ * @param {string} iframeStyle iframe样式
+ * @param {string} language code显示语言
+ * @param {string} code 预览的高亮格式化code
+ * @param {Array} replaceMarkedList 替换text和html字符串
+ * @return {*}
+ */
 function PreviewContent(props) {
   const {
     previewSrc = "",
@@ -17,7 +29,9 @@ function PreviewContent(props) {
     code,
     anchorText = "<!-- Your content -->",
     iframeHeight = 630,
-    iframeStyle
+    normalIframeHeight,
+    iframeStyle,
+    replaceMarkedList,
   } = props;
   let htmlText = `<!doctype html>
   <html lang="en">
@@ -31,15 +45,21 @@ function PreviewContent(props) {
       <!-- full content -->
     </body>
   </html>
-  `
+  `;
 
   if (previewWrapper) {
-    htmlText = htmlText.replace("<!-- full content -->", previewWrapper)
+    htmlText = htmlText.replace("<!-- full content -->", previewWrapper);
   }
-  const srcDoc = htmlText
+  let srcDoc = htmlText
     .replace("<!-- full content -->", previewSrc)
     .replace("{/* Your content */}", placeholder)
     .replace(anchorText, placeholder);
+
+  if (Array.isArray(replaceMarkedList) && replaceMarkedList.length > 0) {
+    replaceMarkedList.forEach((item) => {
+      srcDoc = srcDoc.replace(item.text, item.replaceText);
+    });
+  }
 
   return (
     <div className="col-span-2 row-start-2 min-w-0">
@@ -56,7 +76,7 @@ function PreviewContent(props) {
             <div id={frameId} className="relative" style={{ height: "auto" }}>
               <style>
                 {`#${frameId} {
-          height: ${iframeHeight}px;
+          height: ${normalIframeHeight || iframeHeight}px;
         }
         @media (min-width: 704px) {
           #${frameId} {

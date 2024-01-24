@@ -19,6 +19,7 @@ const APPLICATION_SHELLS = {
       name: "Multi-Column Layouts",
       count: "6",
       img: "/multi-column.png",
+      url: "/multiColumn",
     },
   ],
 };

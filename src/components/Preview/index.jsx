@@ -12,7 +12,19 @@ const highlightMap = {
 };
 
 function Preview(props) {
-  const { title, frameId, componentId, placeholder, iframeHeight, moduleName, modules, iframeStyle, previewWrapper } = props;
+  const {
+    title,
+    frameId,
+    componentId,
+    placeholder,
+    iframeHeight,
+    normalIframeHeight,
+    moduleName,
+    modules,
+    iframeStyle,
+    previewWrapper,
+    replaceMarkedList,
+  } = props;
   const [isPreview, setIsPreview] = useState(true);
   const [language, setLanguage] = useState("html");
   const [highlightLanguage, setHighlightLanguage] = useState("html");
@@ -49,17 +61,17 @@ function Preview(props) {
   };
 
   const getCode = (language) => {
-    const key = `./snippets/${moduleName}/index.${language === 'react' ? 'jsx' : language}`
-    return modules[key]
-  }
+    const key = `./snippets/${moduleName}/index.${language === "react" ? "jsx" : language}`;
+    return modules[key];
+  };
 
   const data = useMemo(() => {
     return {
-      html: getCode('html'),
-      react: getCode('react'),
-      vue: getCode('vue'),
-    }
-  }, [modules])
+      html: getCode("html"),
+      react: getCode("react"),
+      vue: getCode("vue"),
+    };
+  }, [modules]);
 
   const getRenderCode = (language) => {
     const code = getCode(language);
@@ -88,7 +100,7 @@ function Preview(props) {
           />
           <PreiveContent
             frameId={frameId}
-            previewSrc={getCode('html')}
+            previewSrc={getCode("html")}
             placeholder={placeholder}
             language={highlightLanguage}
             isPreview={isPreview}
@@ -96,6 +108,7 @@ function Preview(props) {
             iframeHeight={iframeHeight}
             iframeStyle={iframeStyle}
             previewWrapper={previewWrapper}
+            replaceMarkedList={replaceMarkedList}
           />
         </div>
       </section>
