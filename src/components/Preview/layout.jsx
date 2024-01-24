@@ -2,13 +2,13 @@ import { getRandomId } from "@/utils/random";
 import React, { cloneElement } from "react";
 
 function PreviewLayout(props) {
-  const { moduleName, subModuleName, title, children, iframeHeight } = props;
+  const { moduleName, subModuleName, modules, title, children, iframeHeight } = props;
   const id = getRandomId(20);
   const frameId = `frame-${id}`;
   const componentId = `component-${id}`;
 
   const child = React.Children.map(children, (c) => {
-    return cloneElement(c, { componentId, frameId, iframeHeight });
+    return cloneElement(c, { componentId, frameId, iframeHeight, modules });
   });
 
   return (
@@ -29,7 +29,7 @@ function PreviewLayout(props) {
           >
             <a
               className="text-slate-500 hover:text-slate-600"
-              href="/components#product-application-ui"
+              href="/"
             >
               {moduleName}
             </a>
@@ -38,7 +38,7 @@ function PreviewLayout(props) {
             </div>
             <a
               className="text-slate-500 hover:text-slate-600"
-              href="/components#product-application-ui-application-shells"
+              href="/"
             >
               {subModuleName}
             </a>

@@ -9,14 +9,17 @@ const randomId = getRandomId();
 function PreviewContent(props) {
   const {
     previewSrc = "",
+    previewWrapper,
     placeholder = "",
     frameId,
     isPreview,
     language,
     code,
+    anchorText = "<!-- Your content -->",
     iframeHeight = 630,
+    iframeStyle
   } = props;
-  const srcDoc = `<!doctype html>
+  let htmlText = `<!doctype html>
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
@@ -29,9 +32,14 @@ function PreviewContent(props) {
     </body>
   </html>
   `
+
+  if (previewWrapper) {
+    htmlText = htmlText.replace("<!-- full content -->", previewWrapper)
+  }
+  const srcDoc = htmlText
     .replace("<!-- full content -->", previewSrc)
     .replace("{/* Your content */}", placeholder)
-    .replace("<!-- Your content -->", placeholder);
+    .replace(anchorText, placeholder);
 
   return (
     <div className="col-span-2 row-start-2 min-w-0">
@@ -60,6 +68,7 @@ function PreviewContent(props) {
                 className="w-full overflow-hidden rounded-lg ring-1 ring-slate-900/10"
                 id={frameId}
                 srcDoc={srcDoc}
+                style={iframeStyle}
               />
               <div className="absolute inset-y-0 left-full hidden cursor-ew-resize items-center px-2 sm:flex">
                 <div className="h-8 w-1.5 rounded-full bg-slate-400"></div>

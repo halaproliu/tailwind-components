@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect } from "react";
+import { Fragment, useState, useEffect, useMemo } from "react";
 import PreiveHeader from "./header";
 import PreiveContent from "./content";
 import Prism from "prismjs";
@@ -12,8 +12,7 @@ const highlightMap = {
 };
 
 function Preview(props) {
-  const { title, frameId, componentId, data, placeholder, iframeHeight } =
-    props;
+  const { title, frameId, componentId, placeholder, iframeHeight, moduleName, modules, iframeStyle, previewWrapper } = props;
   const [isPreview, setIsPreview] = useState(true);
   const [language, setLanguage] = useState("html");
   const [highlightLanguage, setHighlightLanguage] = useState("html");
@@ -49,8 +48,21 @@ function Preview(props) {
     getRenderCode(value);
   };
 
+  const getCode = (language) => {
+    const key = `./snippets/${moduleName}/index.${language === 'react' ? 'jsx' : language}`
+    return modules[key]
+  }
+
+  const data = useMemo(() => {
+    return {
+      html: getCode('html'),
+      react: getCode('react'),
+      vue: getCode('vue'),
+    }
+  }, [modules])
+
   const getRenderCode = (language) => {
-    const code = data[language];
+    const code = getCode(language);
     const formatCode = getFormatCode(code, language);
     const hightLanguage = highlightMap[language] || "html";
     setHighlightLanguage(hightLanguage);
@@ -60,7 +72,7 @@ function Preview(props) {
 
   useEffect(() => {
     getRenderCode(language);
-  }, [data, language]);
+  }, [modules, language]);
 
   return (
     <Fragment>
@@ -76,12 +88,14 @@ function Preview(props) {
           />
           <PreiveContent
             frameId={frameId}
-            previewSrc={data.html}
+            previewSrc={getCode('html')}
             placeholder={placeholder}
             language={highlightLanguage}
             isPreview={isPreview}
             code={code}
             iframeHeight={iframeHeight}
+            iframeStyle={iframeStyle}
+            previewWrapper={previewWrapper}
           />
         </div>
       </section>
