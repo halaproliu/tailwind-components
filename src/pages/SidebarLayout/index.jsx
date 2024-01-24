@@ -3,7 +3,10 @@ import PreviewLayout from "@/components/Preview/layout";
 
 import placeholderData from "./snippets/placeholder.html?raw";
 
-const modules = import.meta.glob(`./snippets/*/index.*`, { eager: true, as: 'raw' });
+const modules = import.meta.glob(`./snippets/*/index.*`, {
+  eager: true,
+  as: "raw",
+});
 
 function SidebarLayout() {
   return (

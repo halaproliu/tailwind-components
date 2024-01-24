@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment } from "react";
 import {
   BriefcaseIcon,
   CalendarIcon,
@@ -8,11 +8,11 @@ import {
   LinkIcon,
   MapPinIcon,
   PencilIcon,
-} from '@heroicons/react/20/solid'
-import { Menu, Transition } from '@headlessui/react'
+} from "@heroicons/react/20/solid";
+import { Menu, Transition } from "@headlessui/react";
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
@@ -24,19 +24,31 @@ export default function Example() {
         </h2>
         <div className="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
           <div className="mt-2 flex items-center text-sm text-gray-300">
-            <BriefcaseIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-500" aria-hidden="true" />
+            <BriefcaseIcon
+              className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-500"
+              aria-hidden="true"
+            />
             Full-time
           </div>
           <div className="mt-2 flex items-center text-sm text-gray-300">
-            <MapPinIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-500" aria-hidden="true" />
+            <MapPinIcon
+              className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-500"
+              aria-hidden="true"
+            />
             Remote
           </div>
           <div className="mt-2 flex items-center text-sm text-gray-300">
-            <CurrencyDollarIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-500" aria-hidden="true" />
+            <CurrencyDollarIcon
+              className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-500"
+              aria-hidden="true"
+            />
             $120k – $140k
           </div>
           <div className="mt-2 flex items-center text-sm text-gray-300">
-            <CalendarIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-500" aria-hidden="true" />
+            <CalendarIcon
+              className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-500"
+              aria-hidden="true"
+            />
             Closing on January 9, 2020
           </div>
         </div>
@@ -74,7 +86,10 @@ export default function Example() {
         <Menu as="div" className="relative ml-3 sm:hidden">
           <Menu.Button className="inline-flex items-center rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-white/20">
             More
-            <ChevronDownIcon className="-mr-1 ml-1.5 h-5 w-5" aria-hidden="true" />
+            <ChevronDownIcon
+              className="-mr-1 ml-1.5 h-5 w-5"
+              aria-hidden="true"
+            />
           </Menu.Button>
           <Transition
             as={Fragment}
@@ -90,7 +105,10 @@ export default function Example() {
                 {({ active }) => (
                   <a
                     href="#"
-                    className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                    className={classNames(
+                      active ? "bg-gray-100" : "",
+                      "block px-4 py-2 text-sm text-gray-700",
+                    )}
                   >
                     Edit
                   </a>
@@ -100,7 +118,10 @@ export default function Example() {
                 {({ active }) => (
                   <a
                     href="#"
-                    className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                    className={classNames(
+                      active ? "bg-gray-100" : "",
+                      "block px-4 py-2 text-sm text-gray-700",
+                    )}
                   >
                     View
                   </a>
@@ -111,5 +132,5 @@ export default function Example() {
         </Menu>
       </div>
     </div>
-  )
+  );
 }

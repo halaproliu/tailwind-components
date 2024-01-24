@@ -11,17 +11,17 @@ const HEADINGS = {
     {
       name: "Badges",
       count: "18",
-      img: "/badges",
+      img: "/badges.png",
     },
     {
       name: "Dropdowns",
       count: "5",
-      img: "/dropdowns",
+      img: "/dropdowns.png",
     },
     {
       name: "Buttons",
       count: "10",
-      img: "/buttons",
+      img: "/buttons.png",
     },
     {
       name: "Button Groups",

@@ -1,9 +1,9 @@
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-import { EllipsisVerticalIcon } from '@heroicons/react/20/solid'
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
@@ -20,14 +20,22 @@ export default function Example() {
             <div className="text-sm leading-6 text-gray-500">
               Invoice <span className="text-gray-700">#00011</span>
             </div>
-            <div className="mt-1 text-base font-semibold leading-6 text-gray-900">Tuple, Inc</div>
+            <div className="mt-1 text-base font-semibold leading-6 text-gray-900">
+              Tuple, Inc
+            </div>
           </h1>
         </div>
         <div className="flex items-center gap-x-4 sm:gap-x-6">
-          <button type="button" className="hidden text-sm font-semibold leading-6 text-gray-900 sm:block">
+          <button
+            type="button"
+            className="hidden text-sm font-semibold leading-6 text-gray-900 sm:block"
+          >
             Copy URL
           </button>
-          <a href="#" className="hidden text-sm font-semibold leading-6 text-gray-900 sm:block">
+          <a
+            href="#"
+            className="hidden text-sm font-semibold leading-6 text-gray-900 sm:block"
+          >
             Edit
           </a>
           <a
@@ -40,7 +48,10 @@ export default function Example() {
           <Menu as="div" className="relative sm:hidden">
             <Menu.Button className="-m-3 block p-3">
               <span className="sr-only">More</span>
-              <EllipsisVerticalIcon className="h-5 w-5 text-gray-500" aria-hidden="true" />
+              <EllipsisVerticalIcon
+                className="h-5 w-5 text-gray-500"
+                aria-hidden="true"
+              />
             </Menu.Button>
 
             <Transition
@@ -58,8 +69,8 @@ export default function Example() {
                     <button
                       type="button"
                       className={classNames(
-                        active ? 'bg-gray-50' : '',
-                        'block w-full px-3 py-1 text-left text-sm leading-6 text-gray-900'
+                        active ? "bg-gray-50" : "",
+                        "block w-full px-3 py-1 text-left text-sm leading-6 text-gray-900",
                       )}
                     >
                       Copy URL
@@ -71,8 +82,8 @@ export default function Example() {
                     <a
                       href="#"
                       className={classNames(
-                        active ? 'bg-gray-50' : '',
-                        'block px-3 py-1 text-sm leading-6 text-gray-900'
+                        active ? "bg-gray-50" : "",
+                        "block px-3 py-1 text-sm leading-6 text-gray-900",
                       )}
                     >
                       Edit
@@ -85,5 +96,5 @@ export default function Example() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -3,6 +3,8 @@ import Home from "@/pages/Home";
 import StackedLayout from "@/pages/StackedLayout";
 import SidebarLayout from "@/pages/SidebarLayout";
 import PageHeadings from "@/pages/PageHeadings";
+import Dialogs from "@/pages/Dialogs";
+import SlideOvers from "@/pages/SlideOvers";
 
 const routes = (
   <Routes>
@@ -10,6 +12,8 @@ const routes = (
     <Route path="/stacked" element={<StackedLayout />} />
     <Route path="/sidebar" element={<SidebarLayout />} />
     <Route path="/pageHeadings" element={<PageHeadings />} />
+    <Route path="/dialogs" element={<Dialogs />} />
+    <Route path="/slideOvers" element={<SlideOvers />} />
   </Routes>
 );
 
