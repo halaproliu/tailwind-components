@@ -106,6 +106,7 @@ function Preview(props) {
             isPreview={isPreview}
             code={code}
             iframeHeight={iframeHeight}
+            normalIframeHeight={normalIframeHeight}
             iframeStyle={iframeStyle}
             previewWrapper={previewWrapper}
             replaceMarkedList={replaceMarkedList}

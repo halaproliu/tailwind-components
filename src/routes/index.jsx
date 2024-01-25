@@ -6,6 +6,7 @@ import MultiColumnLayout from "@/pages/MultiColumnLayout";
 import PageHeadings from "@/pages/PageHeadings";
 import Dialogs from "@/pages/Dialogs";
 import SlideOvers from "@/pages/SlideOvers";
+import Notifications from "@/pages/Notifications";
 
 const routes = (
   <Routes>
@@ -16,6 +17,7 @@ const routes = (
     <Route path="/pageHeadings" element={<PageHeadings />} />
     <Route path="/dialogs" element={<Dialogs />} />
     <Route path="/slideOvers" element={<SlideOvers />} />
+    <Route path="/notifications" element={<Notifications />} />
   </Routes>
 );
 
