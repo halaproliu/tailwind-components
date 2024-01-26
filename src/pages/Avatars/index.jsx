@@ -12,7 +12,7 @@ function Avatars() {
       moduleName="Application UI"
       subModuleName="Elements"
       title="Avatars"
-      iframeHeight={560}
+      iframeHeight={120}
       modules={modules}
     >
       <Preview
@@ -74,6 +74,7 @@ function Avatars() {
       <Preview
         title="Avatar group stacked bottom to top"
         moduleName="AvatarGroupStackedBTT"
+        iframeHeight={136}
         previewWrapper={
           '<div class="flex items-center justify-center bg-white p-8"><div class="mx-auto flex w-full max-w-lg items-end justify-around"><!-- full content --></div></div>'
         }
@@ -81,6 +82,7 @@ function Avatars() {
       <Preview
         title="Avatar group stacked top to bottom"
         moduleName="AvatarGroupStackedTTB"
+        iframeHeight={136}
         previewWrapper={
           '<div class="flex items-center justify-center bg-white p-8"><div class="mx-auto flex w-full max-w-lg items-end justify-around"><!-- full content --></div></div>'
         }
