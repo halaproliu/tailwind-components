@@ -10,6 +10,7 @@ import Notifications from "@/pages/Notifications";
 import Avatars from "@/pages/Avatars";
 import Dropdowns from "@/pages/Dropdowns";
 import Buttons from "@/pages/Buttons";
+import ButtonGroups from "@/pages/ButtonGroups";
 
 const routes = (
   <Routes>
@@ -24,6 +25,7 @@ const routes = (
     <Route path="/avatars" element={<Avatars />} />
     <Route path="/dropdowns" element={<Dropdowns />} />
     <Route path="/buttons" element={<Buttons />} />
+    <Route path="/buttonGroups" element={<ButtonGroups />} />
   </Routes>
 );
 
