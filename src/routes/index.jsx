@@ -12,6 +12,7 @@ import Badges from "@/pages/Badges";
 import Dropdowns from "@/pages/Dropdowns";
 import Buttons from "@/pages/Buttons";
 import ButtonGroups from "@/pages/ButtonGroups";
+import Tables from "@/pages/Tables";
 
 const routes = (
   <Routes>
@@ -28,6 +29,7 @@ const routes = (
     <Route path="/dropdowns" element={<Dropdowns />} />
     <Route path="/buttons" element={<Buttons />} />
     <Route path="/buttonGroups" element={<ButtonGroups />} />
+    <Route path="/tables" element={<Tables />} />
   </Routes>
 );
 

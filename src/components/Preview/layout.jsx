@@ -1,4 +1,3 @@
-import { getRandomId } from "@/utils/random";
 import React, { cloneElement } from "react";
 import cls from "classnames";
 
@@ -10,20 +9,17 @@ function PreviewLayout(props) {
     title,
     children,
     iframeHeight,
+    normalIframeHeight,
     placeholder,
     replaceMarkedList,
     className,
   } = props;
-  const id = getRandomId(20);
-  const frameId = `frame-${id}`;
-  const componentId = `component-${id}`;
 
   const child = React.Children.map(children, (c) => {
     const childProps = c.props;
     return cloneElement(c, {
-      componentId,
-      frameId,
       iframeHeight,
+      normalIframeHeight,
       modules,
       placeholder,
       replaceMarkedList,

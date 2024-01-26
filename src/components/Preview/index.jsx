@@ -1,6 +1,7 @@
 import { Fragment, useState, useEffect, useMemo } from "react";
 import PreiveHeader from "./header";
 import PreiveContent from "./content";
+import { getRandomId } from "@/utils/random";
 import Prism from "prismjs";
 import "prismjs/components/prism-jsx";
 import beautify from "js-beautify";
@@ -14,8 +15,6 @@ const highlightMap = {
 function Preview(props) {
   const {
     title,
-    frameId,
-    componentId,
     placeholder,
     iframeHeight,
     normalIframeHeight,
@@ -24,7 +23,11 @@ function Preview(props) {
     iframeStyle,
     previewWrapper,
     replaceMarkedList,
+    render,
   } = props;
+  const id = getRandomId(20);
+  const frameId = `frame-${id}`;
+  const componentId = `component-${id}`;
   const [isPreview, setIsPreview] = useState(true);
   const [language, setLanguage] = useState("html");
   const [highlightLanguage, setHighlightLanguage] = useState("html");
@@ -110,6 +113,7 @@ function Preview(props) {
             iframeStyle={iframeStyle}
             previewWrapper={previewWrapper}
             replaceMarkedList={replaceMarkedList}
+            render={render}
           />
         </div>
       </section>

@@ -33,6 +33,7 @@ function PreviewContent(props) {
     normalIframeHeight,
     iframeStyle,
     replaceMarkedList,
+    render,
   } = props;
   let htmlText = `<!doctype html>
   <html lang="en">
@@ -64,8 +65,8 @@ function PreviewContent(props) {
 
   return (
     <div className="col-span-2 row-start-2 min-w-0">
-      {!!isPreview && (
-        <Fragment>
+      {!!isPreview &&
+        (typeof render === "function" ? (
           <div
             className="mt-4 focus:outline-none"
             id={`headlessui-tabs-panel-${tabId}`}
@@ -74,9 +75,23 @@ function PreviewContent(props) {
             data-headlessui-state="selected"
             aria-labelledby={`headlessui-tabs-tab-${tabId}`}
           >
-            <div id={frameId} className="relative" style={{ height: "auto" }}>
-              <style>
-                {`#${frameId} {
+            <div className="w-full overflow-hidden rounded-lg ring-1 ring-slate-900/10">
+              {render()}
+            </div>
+          </div>
+        ) : (
+          <Fragment>
+            <div
+              className="mt-4 focus:outline-none"
+              id={`headlessui-tabs-panel-${tabId}`}
+              role="tabpanel"
+              tabIndex="0"
+              data-headlessui-state="selected"
+              aria-labelledby={`headlessui-tabs-tab-${tabId}`}
+            >
+              <div id={frameId} className="relative" style={{ height: "auto" }}>
+                <style>
+                  {`#${frameId} {
           height: ${normalIframeHeight || iframeHeight}px;
         }
         @media (min-width: 704px) {
@@ -84,39 +99,39 @@ function PreviewContent(props) {
             height: ${iframeHeight}px;
           }
         }`}
-              </style>
-              <iframe
-                className="w-full overflow-hidden rounded-lg ring-1 ring-slate-900/10"
-                id={frameId}
-                srcDoc={srcDoc}
-                style={iframeStyle}
-              />
-              <div className="absolute inset-y-0 left-full hidden cursor-ew-resize items-center px-2 sm:flex">
-                <div className="h-8 w-1.5 rounded-full bg-slate-400"></div>
+                </style>
+                <iframe
+                  className="w-full overflow-hidden rounded-lg ring-1 ring-slate-900/10"
+                  id={frameId}
+                  srcDoc={srcDoc}
+                  style={iframeStyle}
+                />
+                <div className="absolute inset-y-0 left-full hidden cursor-ew-resize items-center px-2 sm:flex">
+                  <div className="h-8 w-1.5 rounded-full bg-slate-400"></div>
+                </div>
               </div>
             </div>
-          </div>
-          <span
-            id={`headlessui-tabs-panel-${randomId}`}
-            role="tabpanel"
-            aria-labelledby={`headlessui-tabs-tab-${randomId}`}
-            tabIndex="-1"
-            style={{
-              position: "fixed",
-              top: 1,
-              left: 1,
-              width: 1,
-              height: 0,
-              padding: 0,
-              margin: -1,
-              overflow: "hidden",
-              clip: "rect(0px, 0px, 0px, 0px)",
-              whiteSpace: "nowrap",
-              borderWidth: 0,
-            }}
-          />
-        </Fragment>
-      )}
+            <span
+              id={`headlessui-tabs-panel-${randomId}`}
+              role="tabpanel"
+              aria-labelledby={`headlessui-tabs-tab-${randomId}`}
+              tabIndex="-1"
+              style={{
+                position: "fixed",
+                top: 1,
+                left: 1,
+                width: 1,
+                height: 0,
+                padding: 0,
+                margin: -1,
+                overflow: "hidden",
+                clip: "rect(0px, 0px, 0px, 0px)",
+                whiteSpace: "nowrap",
+                borderWidth: 0,
+              }}
+            />
+          </Fragment>
+        ))}
       {!isPreview && (
         <div
           className="mt-4 focus:outline-none"
