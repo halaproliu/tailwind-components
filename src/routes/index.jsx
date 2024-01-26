@@ -9,6 +9,7 @@ import SlideOvers from "@/pages/SlideOvers";
 import Notifications from "@/pages/Notifications";
 import Avatars from "@/pages/Avatars";
 import Dropdowns from "@/pages/Dropdowns";
+import Buttons from "@/pages/Buttons";
 
 const routes = (
   <Routes>
@@ -22,6 +23,7 @@ const routes = (
     <Route path="/notifications" element={<Notifications />} />
     <Route path="/avatars" element={<Avatars />} />
     <Route path="/dropdowns" element={<Dropdowns />} />
+    <Route path="/buttons" element={<Buttons />} />
   </Routes>
 );
 

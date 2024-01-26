@@ -16,6 +16,7 @@ function SidebarLayout() {
       title="Sidebar Layouts"
       iframeHeight={720}
       modules={modules}
+      className="pb-10"
     >
       <Preview
         title="Brand sidebar with header"

@@ -14,6 +14,7 @@ export default function Dropdowns() {
       title="Dropdowns"
       iframeHeight={360}
       modules={modules}
+      className="pb-10"
     >
       <Preview
         title="Simple"

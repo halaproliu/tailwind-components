@@ -14,6 +14,7 @@ export default function Notification() {
       title="Notification"
       iframeHeight={320}
       modules={modules}
+      className="pb-10"
     >
       <Preview
         title="Simple"

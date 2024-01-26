@@ -12,6 +12,7 @@ const randomId = getRandomId();
  * @param {string} previewSrc 预览html字符串
  * @param {string} anchorText 替换预览html的标识符
  * @param {string} iframeHeight iframe高度
+ * @param {string} normalIframeHeight iframe普通高度
  * @param {string} iframeStyle iframe样式
  * @param {string} language code显示语言
  * @param {string} code 预览的高亮格式化code

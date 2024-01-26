@@ -16,6 +16,7 @@ function SlideOvers() {
       title="Slide-overs"
       iframeHeight={500}
       modules={modules}
+      className="pb-10"
     >
       <Preview
         title="Empty"

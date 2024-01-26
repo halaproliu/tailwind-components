@@ -1,5 +1,6 @@
 import { getRandomId } from "@/utils/random";
 import React, { cloneElement } from "react";
+import cls from "classnames";
 
 function PreviewLayout(props) {
   const {
@@ -11,6 +12,7 @@ function PreviewLayout(props) {
     iframeHeight,
     placeholder,
     replaceMarkedList,
+    className,
   } = props;
   const id = getRandomId(20);
   const frameId = `frame-${id}`;
@@ -30,7 +32,12 @@ function PreviewLayout(props) {
   });
 
   return (
-    <div className="relative -mt-[5.75rem] overflow-hidden pt-[5.75rem]">
+    <div
+      className={cls(
+        "relative -mt-[5.75rem] overflow-hidden pt-[5.75rem]",
+        className,
+      )}
+    >
       <img
         src="/img/beams-basic.png"
         alt=""

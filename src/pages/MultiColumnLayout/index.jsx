@@ -17,6 +17,7 @@ function MultiColumnLayout() {
       title="Multi-Column Layouts"
       iframeHeight={720}
       modules={modules}
+      className="pb-10"
       replaceMarkedList={[
         { text: "<!-- Main area -->", replaceText: placeholder },
         {

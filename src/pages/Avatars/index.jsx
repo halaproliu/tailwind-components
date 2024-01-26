@@ -14,6 +14,7 @@ function Avatars() {
       title="Avatars"
       iframeHeight={120}
       modules={modules}
+      className="pb-10"
     >
       <Preview
         title="Circular avatars"

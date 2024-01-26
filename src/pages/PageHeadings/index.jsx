@@ -14,6 +14,7 @@ function PageHeadings() {
       title="Page Headings"
       iframeHeight={100}
       modules={modules}
+      className="pb-10"
     >
       <Preview
         title="With Actions"

@@ -14,6 +14,7 @@ function Dialogs() {
       title="Dialogs"
       iframeHeight={560}
       modules={modules}
+      className="pb-10"
     >
       <Preview
         title="Centered with single action"

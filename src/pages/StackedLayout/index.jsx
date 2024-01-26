@@ -16,6 +16,7 @@ function StackedLayout() {
       title="Stacked Layouts"
       iframeHeight={630}
       modules={modules}
+      className="pb-10"
     >
       <Preview
         title="Light nav with bottom border"
