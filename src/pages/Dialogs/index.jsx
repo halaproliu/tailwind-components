@@ -19,7 +19,7 @@ function Dialogs() {
         title="Centered with single action"
         moduleName="CenteredWithSingleAction"
         previewWrapper={
-          '<div className="bg-gray-300" style="height:560px;"><!-- full content --></div>'
+          '<div class="bg-gray-300" style="height:560px;"><!-- full content --></div>'
         }
       />
       <Preview
