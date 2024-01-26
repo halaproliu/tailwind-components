@@ -7,6 +7,7 @@ import PageHeadings from "@/pages/PageHeadings";
 import Dialogs from "@/pages/Dialogs";
 import SlideOvers from "@/pages/SlideOvers";
 import Notifications from "@/pages/Notifications";
+import Avatars from "@/pages/Avatars";
 
 const routes = (
   <Routes>
@@ -18,6 +19,7 @@ const routes = (
     <Route path="/dialogs" element={<Dialogs />} />
     <Route path="/slideOvers" element={<SlideOvers />} />
     <Route path="/notifications" element={<Notifications />} />
+    <Route path="/avatars" element={<Avatars />} />
   </Routes>
 );
 
